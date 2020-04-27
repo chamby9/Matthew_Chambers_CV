@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Chambers</title>
+</head>
+<body>
+    <!-- Main page -->
+    <div class="page"  id="mainPage">
+        <!-- Links to navigate to other parts of webpage-->
+        <div id="links">
+            <ul class="navLinks">
+                <li>
+                    <a class="link"href="#bioPage">
+                        <svg class="bi bi-people-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+                        </svg>
+                        Bio
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#contactDetailsPage">
+                    <i class="fa fa-address-card" ></i>Contact
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#skillsPage">
+                        <svg class="bi bi-card-checklist" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M7 5.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 11.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0zM7 9.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 01.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                          </svg>Skills
+                    </a>
+                    </li>
+                <li>
+                    <a class="link" href="#educationPage">
+                        <svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z" clip-rule="evenodd"/>
+                          </svg>Education
+
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#workPage">
+                        <svg class="bi bi-hammer" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.812 1.952a.5.5 0 01-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 01-.146.354L3.425 7.853a.5.5 0 01-.708 0L.146 5.274a.5.5 0 010-.706l1.286-1.29a.5.5 0 01.354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 012.077.782l.178.129z"/>
+                            <path fill-rule="evenodd" d="M6.012 3.5a.5.5 0 01.359.165l9.146 8.646A.5.5 0 0115.5 13L14 14.5a.5.5 0 01-.756-.056L4.598 5.297a.5.5 0 01.048-.65l1-1a.5.5 0 01.366-.147z" clip-rule="evenodd"/>
+                          </svg>Work Experience
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="profilePic">
+            <img src="Rhodes Mem-5.jpg" alt="" class="profileImg">
+        </div>
+        <div class="mainHeader">
+            <h1 class="heading" id="webTitle">Matthew Chambers</h1>
+        </div>  
+        
+        
+    </div>
+
+    <!-- Bio Page -->
+    <div class="page" id="bioPage">
+        <div id="bioImg">
+            <img src="stellies.jpg" alt="" class ="pic">
+        </div>
+         <!-- Links to navigate to other parts of webpage-->
+         <div id="bioLinks">
+            <ul class="navLinks">
+                <li>
+                    <a class="link"href="#mainPage">
+                        <svg class="bi bi-arrow-bar-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
+                          </svg>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#contactDetailsPage">
+                    <i class="fa fa-address-card" ></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#skillsPage">
+                        <svg class="bi bi-card-checklist" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M7 5.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 11.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0zM7 9.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 01.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                          </svg>
+                    </a>
+                    </li>
+                <li>
+                    <a class="link" href="#educationPage">
+                        <svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z" clip-rule="evenodd"/>
+                          </svg>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#workPage">
+                        <svg class="bi bi-hammer" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.812 1.952a.5.5 0 01-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 01-.146.354L3.425 7.853a.5.5 0 01-.708 0L.146 5.274a.5.5 0 010-.706l1.286-1.29a.5.5 0 01.354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 012.077.782l.178.129z"/>
+                            <path fill-rule="evenodd" d="M6.012 3.5a.5.5 0 01.359.165l9.146 8.646A.5.5 0 0115.5 13L14 14.5a.5.5 0 01-.756-.056L4.598 5.297a.5.5 0 01.048-.65l1-1a.5.5 0 01.366-.147z" clip-rule="evenodd"/>
+                          </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="heading" id="bioHeading">
+            <h1 class="heading" id="bioTitle">About me</h1>
+        </div>
+        <div id="bioContent">
+            <p class="generalText" id="bioText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis doloribus numquam animi nisi 
+                voluptatem sapiente error, possimus adipisci inventore eveniet recusandae earum quae obcaecati? 
+                Voluptate, cupiditate suscipit dicta fuga odit quis beatae nemo eaque possimus ducimus error laudantium 
+                sint molestias similique deserunt quia dignissimos dolores temporibus magnam id explicabo. Laboriosam at 
+                quas, vero iusto porro voluptates, explicabo, suscipit quaerat adipisci officia voluptas eligendi nihil! 
+                Cupiditate, esse ducimus! Magnam earum culpa corporis perferendis, dignissimos ratione nobis saepe 
+                aspernatur quibusdam doloribus. Fuga placeat qui quibusdam nemo mollitia rerum exercitationem vel, 
+                quidem, laborum quis, iure consectetur itaque? Voluptates commodi necessitatibus pariatur. Aperiam?
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact details page -->
+    <div class="page" id="contactDetailsPage">
+         <!-- Links to navigate to other parts of webpage-->
+         <div id="contactLinks" >
+            <ul class="navLinks">
+                <li>
+                    <a class="link"href="#mainPage">
+                        <svg class="bi bi-arrow-bar-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
+                          </svg>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="link"href="#bioPage">
+                        <svg class="bi bi-people-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+                        </svg>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#skillsPage">
+                        <svg class="bi bi-card-checklist" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M7 5.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 11.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0zM7 9.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 01.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                          </svg>
+                    </a>
+                    </li>
+                <li>
+                    <a class="link" href="#educationPage">
+                        <svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z" clip-rule="evenodd"/>
+                          </svg>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#workPage">
+                        <svg class="bi bi-hammer" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.812 1.952a.5.5 0 01-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 01-.146.354L3.425 7.853a.5.5 0 01-.708 0L.146 5.274a.5.5 0 010-.706l1.286-1.29a.5.5 0 01.354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 012.077.782l.178.129z"/>
+                            <path fill-rule="evenodd" d="M6.012 3.5a.5.5 0 01.359.165l9.146 8.646A.5.5 0 0115.5 13L14 14.5a.5.5 0 01-.756-.056L4.598 5.297a.5.5 0 01.048-.65l1-1a.5.5 0 01.366-.147z" clip-rule="evenodd"/>
+                          </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="heading" id="contactHeading">
+            <h2 class="heading" id="contactTitle">Contact Details</h2>
+        </div>
+        <div id="contactContent">
+            <ul class="listItems" id="contactList">
+                <li>+27 72 941 2773</li>
+                <li>matt@kram.co.za</li>
+                <li><a href="https://www.linkedin.com/in/matthew-chambers-380695186/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.github.com/chamby9"><i class="fa fa-github-square"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skills page -->
+    <div class="page" id="skillsPage">
+        <div id="skillsLinks">
+            <ul class="navLinks">
+                <li>
+                    <a class="link"href="#mainPage">
+                        <svg class="bi bi-arrow-bar-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
+                          </svg>
+                
+                    </a>
+                </li>
+                <li>
+                    <a class="link"href="#bioPage">
+                        <svg class="bi bi-people-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+                        </svg>
+                    
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#contactDetailsPage">
+                        <i class="fa fa-address-card" ></i>
+                        </a>
+                    </li>
+                <li>
+                    <a class="link" href="#educationPage">
+                        <svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z" clip-rule="evenodd"/>
+                          </svg>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#workPage">
+                        <svg class="bi bi-hammer" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.812 1.952a.5.5 0 01-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 01-.146.354L3.425 7.853a.5.5 0 01-.708 0L.146 5.274a.5.5 0 010-.706l1.286-1.29a.5.5 0 01.354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 012.077.782l.178.129z"/>
+                            <path fill-rule="evenodd" d="M6.012 3.5a.5.5 0 01.359.165l9.146 8.646A.5.5 0 0115.5 13L14 14.5a.5.5 0 01-.756-.056L4.598 5.297a.5.5 0 01.048-.65l1-1a.5.5 0 01.366-.147z" clip-rule="evenodd"/>
+                          </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="heading" id="skillsTitle">
+            <h2 class="heading" >Skills</h2>
+        </div>
+        <div id="skillsContent">
+            <ul class="listItems" id="skillsList">
+                <li>Excel</li>    
+                <li>Python</li>    
+                <li>Java</li>    
+                <li>SQL</li>    
+                <li>CV Website building</li>    
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education page -->
+    <div class="page" id="educationPage">
+        <div id="educationLinks">
+            <ul class="navLinks">
+                <li>
+                    <a class="link"href="#mainPage">
+                        <svg class="bi bi-arrow-bar-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
+                          </svg>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="link"href="#bioPage">
+                        <svg class="bi bi-people-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+                        </svg>
+                    
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#contactDetailsPage">
+                        <i class="fa fa-address-card" ></i>
+                        </a>
+                    </li>
+                <li>
+                    <a class="link" href="#skillsPage">
+                        <svg class="bi bi-card-checklist" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M7 5.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 11.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0zM7 9.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 01.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                          </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#workPage">
+                        <svg class="bi bi-hammer" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.812 1.952a.5.5 0 01-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 01-.146.354L3.425 7.853a.5.5 0 01-.708 0L.146 5.274a.5.5 0 010-.706l1.286-1.29a.5.5 0 01.354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 012.077.782l.178.129z"/>
+                            <path fill-rule="evenodd" d="M6.012 3.5a.5.5 0 01.359.165l9.146 8.646A.5.5 0 0115.5 13L14 14.5a.5.5 0 01-.756-.056L4.598 5.297a.5.5 0 01.048-.65l1-1a.5.5 0 01.366-.147z" clip-rule="evenodd"/>
+                          </svg> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="heading" id="educationTitle">
+            <h2 class="heading" >Education</h2>
+        </div>
+        <div class="cardsContainer" id="educationCards">
+            <div class="cards">
+                <div class="topSection">
+                    <h3 class="itemHeading">SACS High School</h3>
+                </div>
+                <div class="midSection">
+                    <h4 class="role">High School Certificate</h4>
+                    <h5 class="date">2005-2016</h5>
+                </div>
+                <div class="bottomSection">
+                    <p class="description">
+                        I attended both the South African College High School and Junior School from grades 1-12. I achieved a B-average for my National Senior Certificate with A-averages in Financial Accounting and English.
+
+                        I was also a prefect in my final year of schooling where I learnt valuable lessons in leadership, time-management and organisational skills.
+                        
+                    </p>
+                </div>
+            </div>
+            
+            <div class="cards">
+                <div class="topSection">
+                    <h3 class="itemHeading">University of Stellenbosch</h3>
+                </div>
+                <div class="midSection">
+                    <h4 class="role">Bachelor of Accounting</h4>
+                    <h5 class="date">2017-Present</h5>
+                </div>
+                <div class="bottomSection">
+                    <p class="description">
+                        I am currently a Bachelor of Accounting student in my final year of study. I will graduate in 
+                        December, having majors in Financial Accounting, Management Accounting, Auditing and Taxation.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="topSection">
+                    <h3 class="itemHeading">HyperionDev</h3>
+                </div>
+                <div class="midSection">
+                    <h4 class="role">Software Engineering Bootcamp</h4>
+                    <h5 class="date">February 2020-May 2020</h5>
+                </div>
+                <div class="bottomSection">
+                    <p class="description">
+                        In 2020 I enrolled in a Software Engineering Bootcamp with HyperionDev in Cape Town, 
+                        South Africa. In this course I learned about the fundamentals of Software Engineering and 
+                        was taught programming languages such as Python and Java as well as the Query language, SQL.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work page -->
+    <div class="page" id="workPage">
+        <div id="workLinks">
+            <ul class="navLinks">
+                <li>
+                    <a class="link"href="#mainPage">
+                        <svg class="bi bi-arrow-bar-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 000-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 10.708.708L8 3.207l2.646 2.647a.5.5 0 00.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 10a.5.5 0 00.5-.5V3a.5.5 0 00-1 0v6.5a.5.5 0 00.5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 010 .8H3.6a.4.4 0 01-.4-.4z" clip-rule="evenodd"/>
+                          </svg>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="link"href="#bioPage">
+                        <svg class="bi bi-people-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z"/>
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" clip-rule="evenodd"/>
+                        </svg>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#contactDetailsPage">
+                        <i class="fa fa-address-card" ></i>
+                        </a>
+                    </li>
+                <li>
+                    <a class="link" href="#skillsPage">
+                        <svg class="bi bi-card-checklist" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M7 5.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 11.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0zM7 9.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-1.496-.854a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 01.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                          </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="#educationPage">
+                        <svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z" clip-rule="evenodd"/>
+                          </svg>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="heading" id="workTitle">
+            <h2 class="heading" >Work Experience</h2>
+        </div>
+        <div class="cardsContainer" id = "workCards">
+            <div class="cards">
+                <div class="topSection">
+                    <h3 class="itemHeading">SACS High School & Paul Roos Gymnasium</h3>
+                </div>
+                <div class="midSection">
+                    <h4 class="role">Water polo coach</h4>
+                    <h5 class="date">January 2020-Present</h5>
+                </div>
+                <div class="bottomSection">
+                    <p class="description">
+                        For the past 4 years I have been coaching water polo at Paul Roos Gymnasium in Stellenbosch 
+                        and more recently SACS High School, two of the most prestigious schools  in South Africa. 
+                        Currently I coach the SACS u15B team.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="topSection">
+                    <h3 class="itemHeading">BDO Cape Town</h3>
+                </div>
+                <div class="midSection">
+                    <h4 class="role">Vacation Work</h4>
+                    <h5 class="date">July 2018-July 2018</h5>
+                </div>
+                <div class="bottomSection">
+                    <p class="description">
+                        I was present at BDO Cape Town as a Student intern on an audit team for a period in June 2018 
+                        performing many tasks such as capturing data and noting variances with the financial statements.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="topSection">
+                    <h3 class="itemHeading">Pizza Fair</h3>
+                </div>
+                <div class="midSection">
+                    <h4 class="role">Part-time delivery driver</h4>
+                    <h5 class="date">2017-Present</h5>
+                </div>
+                <div class="bottomSection">
+                    <p class="description">
+                        I have been working weekends as a part-time delivery driver for the past 5 years. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

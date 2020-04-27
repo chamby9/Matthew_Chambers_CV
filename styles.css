@@ -1,0 +1,287 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right,#252834,#55554f );
+    overflow: hidden;
+}
+
+/* Divs for each page*/
+.page{
+    padding: 20px;
+    height: 100vh;
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.heading{
+    text-size-adjust: 150px;
+    color: #cecb98;
+    transition: color 0.5s ease; 
+    cursor: default;
+    text-align: center;
+}
+
+.heading:hover{
+    color: #7d4a28;
+}
+/* Main title page */
+
+.navLinks{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: #cecb98;
+    transition: color 0.5s ease; 
+    font-size: 30px;
+}
+
+a:hover{
+    color: #7d4a28;
+}
+
+.profileImg{
+    height: 50vh;
+    padding: 5%;
+    border-radius: 22.5%;
+    opacity: 0.75;
+    transition: opacity .25s ease-in-out;
+}
+.cards{
+    display: grid;
+    height: 380px;
+    grid-template-rows: 0.25fr 1fr 2fr;
+    grid-template-areas: "top" "middle" "bottom";
+    margin: 0px 10px 0 10px;
+    border-radius: 17px;
+    
+    justify-content: space-around;
+    transition: transform .75s;
+    
+}
+
+.cards:hover{
+    transform: scale(1.15);
+}
+
+
+.role, .date , .itemHeading, .description{
+    margin-left: 10px;
+    color: #cecb98;
+    
+}
+
+.topSection{
+    grid-area: top;
+    background-color: #252834;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.midSection{
+    grid-area: middle;
+    background-color: #818b63;
+}
+
+.bottomSection{
+    grid-area: bottom;
+    background-color: #55554f;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+/* Bio page*/
+
+
+#bioPage{
+    display: grid;
+    grid-template-areas: "img head head"
+                     "nav placeContent nothing";
+                     
+    grid-template-columns: 1fr 9fr 0fr;
+    grid-template-rows: 3fr 7fr 1fr;
+}
+#bioImg{
+    grid-area: img;
+    text-align: center;
+    
+}
+
+.pic{
+    border-radius: 25%;
+    height: 80%;
+    width: 100%;
+    opacity: 0.75;
+    
+}
+
+#bioLinks{
+    grid-area: nav;
+}
+
+#bioHeading{
+    
+    grid-area: head;
+}
+
+#bioContent{
+    grid-area: placeContent;
+}
+
+.generalText{
+    color: #cecb98;
+    height: 50vh;
+    text-align: center;
+}
+
+/* Contact page*/
+#contactDetailsPage{
+    display: grid;
+    grid-template-areas: ". head ."
+                     "nav placeContent ."
+                     ". . . ";
+                     
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1.5fr 7fr 1.5fr;
+    text-align: center;
+}
+
+#contactLinks{
+    padding: 15px;
+    grid-area: nav;
+    align-items: center;
+    display: inline-block;
+}
+
+#contactHeading{
+    grid-area: head;
+    display: inline-block;
+}
+
+#contactContent{
+    display: inline-block;
+    grid-area: placeContent;
+}
+
+#contactList{
+    list-style: none;
+    font-size: 32px;
+    color: #cecb98;
+}
+
+/* Skills page*/
+#skillsPage{
+    display: grid;
+    grid-template-areas: ". head ."
+                        "nav content ."
+                        ". . .";
+                     
+    grid-template-columns: 1fr 9fr 0fr;
+    grid-template-rows: 3fr 7fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#skillsLinks{
+    padding: 15px;
+    grid-area: nav;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#skillsTitle{
+    grid-area: head;
+    text-align: center;
+}
+
+#skillsContent{
+    grid-area: content;
+    text-align: center;
+}
+
+#skillsList{
+    list-style: none;
+    
+}
+
+li{
+    color: #cecb98;
+    transition: color 0.5s ease; 
+    font-size: 30px;
+}
+
+li:hover{
+    color: #7d4a28;
+}
+
+/*Education page*/
+#educationPage{
+    display: grid;
+    grid-template-areas: "nothing head head"
+                        "nav card card"
+                        "nav card card";
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    
+}
+
+#educationLinks{
+    
+    padding: 15px;
+    grid-area: nav;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#educationTitle{
+    grid-area: head;
+    text-align: center;
+}
+
+#educationCards{
+    display: flex;
+    grid-area: card;
+}
+
+
+/* Work page */
+#workPage{
+    display: grid;
+    grid-template-areas: "head head head"
+                        "nav card card"
+                        "nav card card";
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+}
+
+#workLinks{
+    
+    padding: 15px;
+    grid-area: nav;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#workTitle{
+    grid-area: head;
+    text-align: center;
+}
+
+#workCards{
+    grid-area: card;
+    display: flex;
+    
+}
